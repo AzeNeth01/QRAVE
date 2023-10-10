@@ -4,6 +4,7 @@ import { NavLink } from 'react-router-dom';
 
 //Style Imports
 import './styles.css'
+import { Box, Column} from './styles'
 
 //Asset Imports
 import qrave from '../../assets/qrave_logo.png'
@@ -18,19 +19,37 @@ export default function Header() {
 
     return (
       
-      <div class="container flex items-center justify-between px-10 py-1 rounded">
-        <div class="flex items-center space-x-4">
-          <img src= {qrave} alt="Logo" class="w-40 h-35"/>
-        </div>
-        <div class="space-x-4">
-          <nav >
-              <NavLink exact activeClassName="active" to="/" className= 'NavLink-style header-font '>Home</NavLink>
-              <NavLink activeClassName="active" to="/about" className= 'NavLink-style header-font '>About Us</NavLink>
-              <NavLink activeClassName="active" to="/solution" className= ' NavLink-style header-font'>Services</NavLink>
-              <NavLink activeClassName="active" to="/contact" className= ' NavLink-style header-font '>Contacts</NavLink>
-          </nav>
-        </div>
-      </div>
+      <Box>
+      <Column>
+        <img src={qrave} alt="Logo" className="w-40 h-35"/>
+      </Column>
+      <Column className='flex justify-end'>
+        <nav>
+          <ul className="flex justify-end space-x-3.5">
+            <li>
+              <NavLink exact activeClassName="active" to="/" className="header-font">
+                Home
+              </NavLink>
+            </li>
+            <li>
+              <NavLink activeClassName="active" to="/about" className="header-font">
+                About Us
+              </NavLink>
+            </li>
+            <li>
+              <NavLink activeClassName="active" to="/solution" className="header-font">
+                Services
+              </NavLink>
+            </li>
+            <li>
+              <NavLink activeClassName="active" to="/contact" className="header-font">
+                Contacts
+              </NavLink>
+            </li>
+          </ul>
+        </nav>
+      </Column>
+    </Box>
     );
 }
 
