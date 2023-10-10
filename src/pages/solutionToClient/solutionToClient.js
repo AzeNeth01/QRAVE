@@ -1,5 +1,6 @@
-import './solutionToClient.css';
-import { Carousel } from './Component/Carousel';
+import '../../css/solutionToClient.css';
+
+import { Carousel } from '../../components/Carousel';
 
 function App() {
   return (

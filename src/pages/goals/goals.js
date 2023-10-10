@@ -1,5 +1,6 @@
 import React from 'react';
-import '../src/custom.css'
+import '../../css/custom.css'
+
 import goalsimage from '../src/images/goals-section.png';
 import qravedemo from '../src/video/Qrave_quick_demo.mp4';
 
