@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Sansita:ital,wght@1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sansita&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito&family=swap');
 
 @tailwind base;
 @tailwind components;
@@ -15,56 +16,98 @@
   text-shadow: inset 2px 10px 8px rgba(5, 0, 0, 0.5);
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 990px) {
   .section{
     text-align: center;
     display: flex;
     justify-content: center;
     flex-direction: column;
   }
-  .image{
-    justify-content: center;
-    text-align: center;
-    align-items: center;
-    width: 100%;
+  .HeroTitleText{
+    font-size: 2.5rem;
   }
-  .title{
-    font-size: 5rem;
-  };
+  .HeroSubtitleText{
+    margin-top: 1rem;
+  }
+  .HeroCalltoActions{
+    margin-top: 1rem;
+  }
 }
 
-@media (max-width: 900px){
-  .logo{
-    width: 22em;
+@media (max-width: 816px){
+  .HeroTitleText{
+    font-size: 1.9rem;
   }
-  .subtitle{
-    font-size: 1em;
+  .HeroSubtitleText{
+    font-size: 0.9rem;
+    margin-top: 0.8rem;
   }
-  .hero{
-    display: flex;
-    flex-direction: column;
-    text-align: center;
+  .HeroCalltoActions{
+    margin-top: 0.8rem;
+    font-size: 0.9rem;
+    width: 100%;
     justify-content: center;
+    text-align: center;
     align-items: center;
+  }
+  .HeroSection{
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+  }
+  .HeroOverlayContents{
+    margin: 0;
+  }
+  .HeroConnectBtn{
+    padding: 0.5rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+  .HeroLearnMoreBtn{
+    margin-left: 0.5rem;
   }
 }
 
 @media (max-width: 490px){
+  .HeroCalltoActions{
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .HeroLearnMoreBtn{
+    margin-left: 0;
+  }
   .logo{
     font-size: 10px;
   }
   .subtitle{
     font-size: 0.5px;
   }
+  .text{
+    font-size: 25px;
+    margin-bottom: 5px;
+  }
 }
 
 @media (max-width: 550px){
-  .subtitle{
-    font-size: 15px;
+  .HeroImage{
+    height: 20rem;
+    width: auto;
+  }
+  .HeroTitleText{
+    font-size: 30px;
+  }
+
+  .HeroSubtitleText{
+    font-size: 0.1rem;
   }
   .text{
-    font-size: 25px;
-    margin-bottom: 8px;
+    margin-bottom: 5px;
+  }
+
+
+
+  .subtitle{
+    font-size: 15px;
   }
   .subtext{
     font-size: 15px;
@@ -88,3 +131,4 @@
     width: 100%;
   }
 }
+

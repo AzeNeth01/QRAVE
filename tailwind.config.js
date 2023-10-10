@@ -6,12 +6,15 @@ module.exports = {
     extend: {
       fontFamily:{
         Sansita: 'Sansita',
-        Poppins: 'Poppins'
+        Poppins: 'Poppins',
+        Nunito: 'Nunito'
       },
       fontSize:{
         normal: '21px',
         title: ['10rem', {letterSpacing: '0.2rem'}],
-        large: '2.5rem'
+        large: '2.5rem',
+        extraLarge: '3.5rem'
+
       },
       width:{
         50: '2200px',
@@ -21,7 +24,8 @@ module.exports = {
         tiny:{letterSpacing: '0.75rem'}
       },
       colors:{
-        main: '#6C5AD8'
+        mainColor: '#6C5AD8',
+        accent: '#FD003D'
       }
 
     },
