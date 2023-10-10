@@ -1,12 +1,15 @@
+//Style Imports
+import '../../css/App.css';
+
+//Asset Imports
+import Who from '../../assets/who.jpg'
+import HeroHalf from '../../assets/half.jpg'
+
 /**
  * @Author Azeneth01 (June Azeneth M. Suco)
  * Hero and Who We Are Section
  * @returns app
  */
-
-import './App.css';
-import Who from './images/who.jpg'
-import HeroHalf from './images/half.jpg'
 
 function Hero() {
   return (
