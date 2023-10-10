@@ -3,6 +3,7 @@ import { Routes, BrowserRouter as Router, Route } from 'react-router-dom';
 
 //Named Imports
 import Header from './components/Header/header';
+import Footer from './components/Footer/footer';
 import Hero from './pages/hero/hero';
 import SolutionToClient from './pages/solutionToClient/solutionToClient';
 import Goals from './pages/goals/goals';
@@ -24,6 +25,7 @@ import Goals from './pages/goals/goals';
           <Route path = '/hero' component = { Hero } />
           <Route path = '/SolutionToClient' component = { SolutionToClient } />
         </Routes>
+        <Footer />
       </div>
     </Router>
   

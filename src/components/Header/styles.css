@@ -1,20 +1,18 @@
 .container{
     background-color: #6C5AD8; 
-}
+    } 
+
 
 .header-font{
     font-family: 'Poppins', sans-serif;
     font-weight: medium;
     color: #FFFFFF;
-    margin: 0;
-    padding-top:100px;
     padding: 15px;
+    align-items: right;
 
 }
 
-.NavLink-style{
-    text-decoration: none;
-}
-.NavLink-style:visited{
-    text-decoration: underline;
+img{
+    width: 110px;
+    height: 90px;
 }
