@@ -14,6 +14,14 @@ export default function Qravegoals(){
             <div className='qrave-demo-video flex items-center justify-center'>
                 <video src={qravedemo} controls autoPlay className='qrave-video '/>
             </div>
+
+            <div class="HeroSection">
+                <img alt=""></img>
+                <img src="" alt=""></img>
+                <p></p>
+                <button></button><button></button>
+                <button></button><button></button>
+            </div>
         </div>
     )
 }
