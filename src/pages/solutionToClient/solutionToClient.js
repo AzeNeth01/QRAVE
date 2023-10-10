@@ -2,7 +2,7 @@ import '../../css/solutionToClient.css';
 
 import { Carousel } from '../../components/Carousel';
 
-function App() {
+function solutionToClient() {
   return (
     <div className="App">
       <h1 className="text-3xl font-bold Poppins text-violet-500 my-4">SOLUTIONS</h1>
@@ -37,4 +37,4 @@ function App() {
   );
 }
 
-export default App;
+export default solutionToClient;

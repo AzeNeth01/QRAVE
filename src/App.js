@@ -1,12 +1,11 @@
 //Module Imports
-import react from 'react';
-import { Router, Route, Switch } from 'react-router-dom';
+import { Routes, BrowserRouter as Router, Route } from 'react-router-dom';
 
 //Named Imports
-import Header from './components/Header';
+import Header from './components/Header/header';
 import Hero from './pages/hero/hero';
 import SolutionToClient from './pages/solutionToClient/solutionToClient';
-
+import Goals from './pages/goals/goals';
 
 /**
  * @author ampats04 (Jeremy Andy F. Ampatin)
@@ -14,16 +13,23 @@ import SolutionToClient from './pages/solutionToClient/solutionToClient';
  * @returns App
  */
 
-export default function App() {
+  function App() {
+
   return (
     <Router>
-      <Header />
-      <Switch>
-        <Route path = '/#hero' component = { Hero } />
-        <Route path = '/#solution' component = { SolutionToClient } />
-      </Switch>
+      <div>
+        <Header />
+        <Routes>
+          <Route path = '/' exact component = { Goals } />
+          <Route path = '/hero' component = { Hero } />
+          <Route path = '/SolutionToClient' component = { SolutionToClient } />
+        </Routes>
+      </div>
     </Router>
   
   );
 }
+
+export default App;
+
 
