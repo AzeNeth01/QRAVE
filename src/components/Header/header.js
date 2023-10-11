@@ -1,5 +1,4 @@
 //Module Imports
-import  React, { useState, useEffect } from 'react';
 import { Link as ScrollLink } from 'react-scroll';
 
 //Style Imports
@@ -8,24 +7,13 @@ import './styles.css'
 //Asset Imports
 import qrave from '../../assets/qrave_logo.png'
 
-
 /**
  * @author ampats04 (Jeremy Andy F. Ampatin)
  * Header Component
  */
 
 export default function Header(){
-  const [sticky, setSticky] = useState(false);
-
-  useEffect(() =>{
-    const handleScroll = () =>{
-      setSticky(window.scrollY > 200)
-      console.log(window.scrollY);
-    }
-    window.addEventListener('scroll', handleScroll)
-    return () => window.removeEventListener('scroll', handleScroll)
-  });
-
+ 
   return (
 
     <nav>
@@ -36,7 +24,6 @@ export default function Header(){
           <ScrollLink to = 'hero' spy = {true} smooth = {true} duration = {500} className = 'links'> About us </ScrollLink>
           <ScrollLink to = 'solution' spy = {true} smooth = {true} duration = {500} className = 'links'> Services </ScrollLink>
           <ScrollLink to = 'goals' spy = {true} smooth = {true} duration = {500} className = 'links'> Contact </ScrollLink>
-
         </div> 
      </div>
     </nav>

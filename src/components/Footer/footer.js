@@ -11,6 +11,8 @@ import phone from '../../assets/phone.png';
 import email from '../../assets/email.png';
 import map from '../../assets/map.png';
 import copyright from '../../assets/copyright.png';
+
+
 /**
  * @author ampats04 (Jeremy Andy F. Ampatin)
  * Footer Component

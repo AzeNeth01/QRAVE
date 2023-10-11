@@ -1,5 +1,4 @@
 //Module Imports
-
 import React from 'react';
 
 //Named Imports
@@ -9,9 +8,10 @@ import Hero from '../../pages/Hero/hero';
 import SolutionToClient from '../../pages/SolutionToClient/solutionToClient';
 import Goals from '../../pages/Goals/goals';
 
-
 //Style Imports
 import '../mainPage/styles.css'
+
+
 /**
  * @author ampats04 (Jeremy Andy F. Ampatin)
  * Main Page
@@ -26,6 +26,7 @@ import '../mainPage/styles.css'
          <Header/>
 
           <div id = 'hero'> <Hero/> </div>
+          {/* Temporary!! */}
           <br></br>
           <br></br>
           <br></br>
@@ -36,7 +37,8 @@ import '../mainPage/styles.css'
           <br></br>
           <br></br>
           <br></br>
-          <br></br>
+          <br></br> 
+          {/* Temporary!! */}
           <div id = 'solution' style={{marginTop: '100px'}}> <SolutionToClient/> </div>
           <div> <Goals/> </div> 
         
