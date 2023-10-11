@@ -35,7 +35,6 @@ export default function Footer(){
 
                     <div className = 'sb_footer-links-div'>
                         <h3>Contact Us</h3>  
-                        
                             <p><img src = {map} alt = '' className = 'icon'/> Cebu City</p>
                             <p><img src = {email} alt = '' className = 'icon'/> dreamtech@gmail.com</p>
                             <p><img src = {phone} alt = '' className = 'icon'/> 099999999</p>
@@ -56,7 +55,7 @@ export default function Footer(){
 
         <div className = 'sb_footer-below'>
             <div className = 'sb_footer-copyright'>
-                <img src = {copyright} alt = '' className = 'icon-credits'/> 
+                <img src = {copyright} alt = '' className = 'icon-credits'/>
                 <p>{year} DREAMTECH | PRIVACY POLICY </p>
             </div>
         </div>
