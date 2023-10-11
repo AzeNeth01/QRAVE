@@ -11,7 +11,7 @@ import HeroHalf from '../../assets/half.jpg'
  * @returns app
  */
 
-function Hero() {
+export default function Hero() {
   return (
     <body className="h-screen">
       <div class="HeroSection w-full flex items-start justify-center flex-col bg-black relative">
@@ -39,5 +39,3 @@ function Hero() {
     </body>
   );
 }
-
-export default Hero;

@@ -3,12 +3,12 @@ import React from 'react';
 
 //Style Imports
 import './styles.css';
-import { Box, 
+import  { Box, 
         Container,
         Heading,
         Column,
         Row,
-         } from './styles';
+        } from './styles';
 
 //Asset Imports
 

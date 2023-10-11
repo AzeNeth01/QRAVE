@@ -8,6 +8,7 @@ import { Box, Column} from './styles'
 
 //Asset Imports
 import qrave from '../../assets/qrave_logo.png'
+import { scroller } from 'react-scroll';
 
 
 /**
@@ -16,6 +17,14 @@ import qrave from '../../assets/qrave_logo.png'
  */
 
 export default function Header() {
+
+    const scrollToSection = (sectionName) => {
+      scroller.scrollTo(sectionName, {
+        duration: 800,
+        delayy: 0,
+        smooth: 'easeInOutQuart',
+      });
+    }
 
     return (
       
