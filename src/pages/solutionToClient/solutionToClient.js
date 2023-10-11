@@ -2,6 +2,8 @@ import '../../css/solutionToClient.css';
 
 import { Carousel } from '../../components/Carousel';
 
+
+import Goals from '../Goals/goals';
 function solutionToClient() {
   return (
     <div className="App">
@@ -28,12 +30,14 @@ function solutionToClient() {
           </p>
         </div>
       </div>
-
+      <Goals/>
       <div>
-    
         <Carousel />
+        
       </div>
+    
     </div>
+    
   );
 }
 

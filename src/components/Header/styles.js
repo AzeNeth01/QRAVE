@@ -4,7 +4,7 @@ export const Box = styled.div`
 display: flex;
 padding: 20px 45px; 
 background: #6C5AD8; 
-position: absolute; 
+position: relative; 
 width: 100%; 
 align-items: center;
 

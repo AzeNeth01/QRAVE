@@ -21,7 +21,7 @@ import Goals from '../../pages/Goals/goals';
       <div>
         <Header />
         <Routes>
-          <Route path = '/' element = { <Goals/> } />
+          <Route path = '/' element = { <Hero/> } />
           <Route path = '/about' element = { <Hero/> } />
           <Route path = '/solution' element = { <SolutionToClient/> } />
         </Routes>
