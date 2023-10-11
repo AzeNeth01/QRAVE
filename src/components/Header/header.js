@@ -1,6 +1,7 @@
 //Module Imports
 import  React from 'react';
 import { NavLink } from 'react-router-dom';
+import { scroller } from 'react-scroll';
 
 //Style Imports
 import './styles.css'
@@ -8,7 +9,7 @@ import { Box, Column} from './styles'
 
 //Asset Imports
 import qrave from '../../assets/qrave_logo.png'
-import { scroller } from 'react-scroll';
+
 
 
 /**

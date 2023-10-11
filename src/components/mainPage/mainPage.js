@@ -1,12 +1,15 @@
 //Module Imports
-import { Routes, BrowserRouter as Router, Route, BrowserRouter } from 'react-router-dom';
+import { Routes, 
+        BrowserRouter as Router, 
+        Route, 
+        BrowserRouter } from 'react-router-dom';
 
 //Named Imports
 import Header from '../Header/header';
 import Footer from '../Footer/footer';
 import Hero from '../../pages/Hero/hero';
 import SolutionToClient from '../../pages/SolutionToClient/solutionToClient';
-import Goals from '../../pages/Goals/goals';
+import Goals from '../../pages/Goals/goals'
 
 /**
  * @author ampats04 (Jeremy Andy F. Ampatin)
@@ -17,18 +20,21 @@ import Goals from '../../pages/Goals/goals';
   export default function MainPage() {
 
   return (
-    <BrowserRouter>
+    //<BrowserRouter>
       <div>
-        <Header />
-        <Routes>
+        {/* //<Header /> */}
+        {/* <Routes>
           <Route path = '/' element = { <Hero/> } />
           <Route path = '/about' element = { <Hero/> } />
           <Route path = '/solution' element = { <SolutionToClient/> } />
-        </Routes>
+        </Routes> */}
+        <Hero/>
+        <SolutionToClient/>
+        <Goals/>
       
         <Footer />
       </div>
-    </BrowserRouter>
+    //</BrowserRouter>
   
   );
 }
