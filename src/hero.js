@@ -23,6 +23,8 @@ function Hero() {
         </div> 
       </div>
 
+      <div className={'transition-all w-3 h-3 bg-white rounded-full ${curr} '}></div>
+
       <div className='flex m-20 text-gray-500 align-baseline section'>
         <div className='image'>
           <img className='w-50 pic' src={Who} alt="" />
