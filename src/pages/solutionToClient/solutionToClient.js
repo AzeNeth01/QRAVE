@@ -30,7 +30,6 @@ function solutionToClient() {
           </p>
         </div>
       </div>
-      <Goals/>
       <div>
         <Carousel />
         
