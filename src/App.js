@@ -1,12 +1,10 @@
 //Module Imports
-import { Routes, BrowserRouter as Router, Route } from 'react-router-dom';
+import React from 'react';
 
 //Named Imports
-import Header from './components/Header/header';
-import Footer from './components/Footer/footer';
-import Hero from './pages/hero/hero';
-import SolutionToClient from './pages/solutionToClient/solutionToClient';
-import Goals from './pages/goals/goals';
+import MainPage from './components/mainPage/mainPage';
+import { BrowserRouter } from 'react-router-dom';
+
 
 /**
  * @author ampats04 (Jeremy Andy F. Ampatin)
@@ -17,17 +15,11 @@ import Goals from './pages/goals/goals';
   function App() {
 
   return (
-    <Router>
-      <div>
-        <Header />
-        <Routes>
-          <Route path = '/' exact component = { Goals } />
-          <Route path = '/hero' component = { Hero } />
-          <Route path = '/SolutionToClient' component = { SolutionToClient } />
-        </Routes>
-        <Footer />
-      </div>
-    </Router>
+      <React.Fragment>
+       <MainPage />
+       
+
+      </React.Fragment>
   
   );
 }
