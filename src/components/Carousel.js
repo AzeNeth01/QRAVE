@@ -11,9 +11,9 @@ export class Carousel extends Component {
             <div className='flex items-center justify-center relative gap-3 mt-6'>
 
                 
-                <img src= {img_1} ></img>
-                <img src= {img_2} ></img>
-                <img src= {img_2} ></img>
+                <img src= {img_1} />
+                <img src= {img_2} />
+                <img src= {img_2} />
 
 
             </div>
