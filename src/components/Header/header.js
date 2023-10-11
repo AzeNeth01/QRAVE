@@ -28,9 +28,10 @@ export default function Header(){
 
   return (
 
-    <nav className = {`${sticky ? 'sticky' : ''}`}>
+    <nav>
      <div className = 'nav-inner'>
       <span className = 'logo'> <img src = {qrave} /></span>
+
         <div>
           <NavLink exact activeClassName = 'active' 
                    to ='/'
