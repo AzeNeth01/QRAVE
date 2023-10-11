@@ -1,6 +1,6 @@
 //Module Imports
 import  React, { useState, useEffect } from 'react';
-import { NavLink } from 'react-router-dom';
+import { Link as ScrollLink } from 'react-scroll';
 
 //Style Imports
 import './styles.css'
@@ -31,27 +31,11 @@ export default function Header(){
     <nav>
      <div className = 'nav-inner'>
       <span className = 'logo'> <img src = {qrave} /></span>
-
         <div>
-          <NavLink exact activeClassName = 'active' 
-                   to ='/'
-                   className = 'links'> Home 
-          </NavLink>
-
-          <NavLink exact activeClassName = 'active' 
-                   to ='/about'
-                   className = 'links'> About us 
-          </NavLink>
-
-          <NavLink exact activeClassName = 'active' 
-                   to ='/services'
-                   className = 'links'> Services 
-          </NavLink>
-
-          <NavLink exact activeClassName = 'active' 
-                   to ='/contacts'
-                   className = 'links'> Contact 
-          </NavLink>
+          <ScrollLink to = 'hero' spy = {true} smooth = {true} duration = {500} className = 'links'> Home </ScrollLink>
+          <ScrollLink to = 'hero' spy = {true} smooth = {true} duration = {500} className = 'links'> About us </ScrollLink>
+          <ScrollLink to = 'solution' spy = {true} smooth = {true} duration = {500} className = 'links'> Services </ScrollLink>
+          <ScrollLink to = 'goals' spy = {true} smooth = {true} duration = {500} className = 'links'> Contact </ScrollLink>
 
         </div> 
      </div>
