@@ -38,6 +38,7 @@ import { Navbar } from '@material-tailwind/react';
             <Goals/>
           </div> 
         </div> */}
+        <Footer/>
         </React.Fragment>
   
   );
