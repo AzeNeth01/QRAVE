@@ -1,15 +1,12 @@
 //Module Imports
-import  React from 'react';
+import  React, { useState, useEffect } from 'react';
 import { NavLink } from 'react-router-dom';
-import { scroller } from 'react-scroll';
 
 //Style Imports
 import './styles.css'
-import { Box, Column} from './styles'
 
 //Asset Imports
 import qrave from '../../assets/qrave_logo.png'
-
 
 
 /**
@@ -17,50 +14,46 @@ import qrave from '../../assets/qrave_logo.png'
  * Header Component
  */
 
-export default function Header() {
+export default function Header(){
+  const [sticky, setSticky] = useState(false);
 
-    const scrollToSection = (sectionName) => {
-      scroller.scrollTo(sectionName, {
-        duration: 800,
-        delayy: 0,
-        smooth: 'easeInOutQuart',
-      });
+  useEffect(() =>{
+    const handleScroll = () =>{
+      setSticky(window.scrollY > 200)
+      console.log(window.scrollY);
     }
+    window.addEventListener('scroll', handleScroll)
+    return () => window.removeEventListener('scroll', handleScroll)
+  });
 
-    return (
-      
-      <Box>
-      <Column>
-        <img src={qrave} alt="Logo" className="w-40 h-35"/>
-      </Column>
-      <Column className='flex justify-end'>
-        <nav>
-          <ul className="flex justify-end space-x-3.5">
-            <li>
-              <NavLink exact activeClassName="active" to="/" className="header-font">
-                Home
-              </NavLink>
-            </li>
-            <li>
-              <NavLink activeClassName="active" to="/about" className="header-font">
-                About Us
-              </NavLink>
-            </li>
-            <li>
-              <NavLink activeClassName="active" to="/solution" className="header-font">
-                Services
-              </NavLink>
-            </li>
-            <li>
-              <NavLink activeClassName="active" to="/contact" className="header-font">
-                Contacts
-              </NavLink>
-            </li>
-          </ul>
-        </nav>
-      </Column>
-    </Box>
-    );
+  return (
+
+    <nav className = {`${sticky ? 'sticky' : ''}`}>
+     <div className = 'nav-inner'>
+      <span className = 'logo'> <img src = {qrave} /></span>
+        <div>
+          <NavLink exact activeClassName = 'active' 
+                   to ='/'
+                   className = 'links'> Home 
+          </NavLink>
+
+          <NavLink exact activeClassName = 'active' 
+                   to ='/about'
+                   className = 'links'> About us 
+          </NavLink>
+
+          <NavLink exact activeClassName = 'active' 
+                   to ='/services'
+                   className = 'links'> Services 
+          </NavLink>
+
+          <NavLink exact activeClassName = 'active' 
+                   to ='/contacts'
+                   className = 'links'> Contact 
+          </NavLink>
+
+        </div> 
+     </div>
+    </nav>
+  )
 }
-
-
