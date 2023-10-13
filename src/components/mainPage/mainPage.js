@@ -4,9 +4,10 @@ import React from 'react';
 //Named Imports
 import Header from '../Header/header';
 import Footer from '../Footer/footer';
-import Hero from '../../pages/Hero/hero';
+import Hero from '../../pages/hero/Hero';
 import SolutionToClient from '../../pages/SolutionToClient/solutionToClient';
-import Goals from '../../pages/Goals/goals';
+import Goals from '../../pages/goals/Goals';
+import WhoWeAre from '../../pages/hero/whoWeAre';
 
 //Style Imports
 import '../mainPage/styles.css'
@@ -24,8 +25,11 @@ import '../mainPage/styles.css'
       <React.Fragment>
        
          <Header/>
-
+          <div>
           <div id = 'hero'> <Hero/> </div>
+          <div id = 'whoweare'> <WhoWeAre/></div>
+          </div>
+          
           {/* Temporary!! */}
           <br></br>
           <br></br>

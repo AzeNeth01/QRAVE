@@ -1,8 +1,8 @@
 //Style Imports
-import '../../css/App.css';
+import './customstyles.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 //Asset Imports
-import Who from '../../assets/who.jpg'
 import HeroHalf from '../../assets/half.jpg'
 
 /**
@@ -13,31 +13,15 @@ import HeroHalf from '../../assets/half.jpg'
 
 export default function Hero() {
   return (
-    <body className="h-screen">
-      <div class="HeroSection w-full flex items-start justify-center flex-col bg-black relative">
-        <img class="HeroImage w-full h-full opacity-40" src={ HeroHalf } alt=""></img>
-          <div className='HeroOverlayContents absolute justify-start items-start ml-16 flex-col text-white w-2/3 hero'>
-            <p className='HeroTitleText text-extraLarge leading-none font-Sansita'>The One POS for Every Juan: <br/> Simplifying Business for All</p>
-            <p className='HeroSubtitleText text-2xl font-Nunito leading-tight subtitle mt-8'>We provide customized POS systems tailored to meet the specific needs and requirements of your business, ensuring seamless and efficient management of your point-of-sale operations.</p>
-              <div className='HeroCalltoActions flex flex-row gap-5 mt-8'>
-                <button className='HeroConnectBtn bg-mainColor hover:bg-accent p-3 pl-9 pr-9 font-Nunito rounded-tl-3xl rounded-br-3xl'>Connect</button>
-                <button className='HeroLearnMoreBtn text-mainColor ml-5 font-Nunito'>Learn More</button>
-              </div>
-        </div> 
-      </div>
-
-      <div className={'transition-all w-3 h-3 bg-white rounded-full ${curr} '}></div>
-
-      <div className='flex m-20 text-gray-500 align-baseline section'>
-        <div className='image'>
-          <img className='w-50 ' src={ Who } alt="" />
+      <div className="HeroSection w-full flex flex-col bg-black relative ">
+        <div className="card text-bg-dark cardContent">
+          <img src={HeroHalf} class="heroImage" alt="..."/>
+          <div className="ml-[1.2rem] mr-[1.2rem] flex flex-col heroContent">
+            <p className="titleHero h1">The One POS for Every Juan: <br/> Simplifying Business for All</p>
+            <p className="card-text mt-3">We provide customized POS systems tailored to meet the specific needs and requirements of your business, ensuring seamless and efficient management of your point-of-sale operations.</p>
+            <button className="mt-1 bg-customColor text-white customBtn">Connect</button>
+          </div>
         </div>
-        <div className='ml-7 whowearetext'>
-          <h3 className='text-mainColor text-large font-bold mb-7 text'>WHO WE ARE</h3>
-          <p className='font-Nunito text-normal subtext mt-8 mb-4 text-justify'>DreamTech, founded by Richard Lee in the Philippines, began as a POS distributor, specializing in efficient off-the-shelf solutions. As their reach expanded, they shifted their focus to providing customized POS systems, addressing the unique requirements of businesses, especially in the VisMin region. This strategic transition allowed DreamTech to better cater to individualized client needs.</p>
-        </div>
-      </div>
-
-    </body>
+      </div>  
   );
 }

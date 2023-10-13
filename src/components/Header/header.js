@@ -15,7 +15,7 @@ import qrave from '../../assets/qrave_logo.png'
 export default function Header(){
  
   return (
-
+    <div>
     <nav>
      <div className = 'nav-inner'>
       <span className = 'logo'> <img src = {qrave} /></span>
@@ -27,5 +27,10 @@ export default function Header(){
         </div> 
      </div>
     </nav>
+
+
+
+    </div>
+    
   )
 }
