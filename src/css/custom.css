@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inclusive+Sans&family=Poppins&display=swap');
 
 .qrave-header{
-margin-top: 100px;
 font-family: 'Inclusive Sans', sans-serif;
 font-family: 'Poppins', sans-serif;
 color: #6C5AD8;
@@ -10,8 +9,8 @@ font-weight: bolder;
 
 .qrave-sub-header{
     font-family: 'Poppins', sans-serif;
-    font-weight: lighter;
     color: #757575;
+    font-size: large;
 }
 
 .qrave-video{
@@ -21,5 +20,9 @@ font-weight: bolder;
 @media(max-width: 658px){
     .qrave-video{
         width: 100%;
+    }
+
+    .qrave-sub-header{
+        font-size: 15px; 
     }
 }

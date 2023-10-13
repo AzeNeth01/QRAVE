@@ -8,7 +8,7 @@ import rec_3 from '../../assets/rec3.jpg';
 import rec_4 from '../../assets/rec4.jpg';
 import business from '../../assets/business.png';
 
-import Goals from '../Goals/goals';
+import Goals from '../goals/Goals';
 function solutionToClient() {
   return (
     <div className="App">
