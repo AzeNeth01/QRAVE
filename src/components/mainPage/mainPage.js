@@ -25,10 +25,8 @@ import '../mainPage/styles.css'
       <React.Fragment>
        
          <Header/>
-          <div>
           <div id = 'hero'> <Hero/> </div>
           <div id = 'whoweare'> <WhoWeAre/></div>
-          </div>
           
           {/* Temporary!! */}
           <br></br>
