@@ -1,11 +1,11 @@
-import '../../css/SolutionToClient.css';
-
-import Slider from '../../components/slider';
+import '../Solution/styles.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import rec_1 from '../../assets/rec1.jpg';
-import rec_2 from '../../assets/rec2.jpg';
-import rec_3 from '../../assets/rec3.jpg';
-import rec_4 from '../../assets/rec4.jpg';
+
+import Slider from '../../components/Carousel/slider';
+import rec_1 from '../../assets/images/rec1.jpg';
+import rec_2 from '../../assets/images/rec2.jpg';
+import rec_3 from '../../assets/images/rec3.jpg';
+import rec_4 from '../../assets/images/rec4.jpg';
 
 
 

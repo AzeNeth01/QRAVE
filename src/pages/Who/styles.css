@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@900&display=swap');
+
+* {
+  font-family: 'Poppins';
+}
+
+.titleHero {
+  font-weight: bolder;
+}
+
+.toRight {
+  justify-content: right;
+  align-items: right;
+  text-align: right;
+}
+
+.containerCustomStyle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10rem;
+  margin-bottom: 12rem;
+}
+
+.opacity-50 {
+  filter: brightness(0.5);
+}
+
+.row {
+  --bs-gutter-x: 1.5rem;
+  --bs-gutter-y: 0;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: calc(-1 * var(--bs-gutter-y));
+  margin-right: calc(-.5 * var(--bs-gutter-x));
+  margin-left: calc(-.5 * var(--bs-gutter-x));
+  align-items: center;
+}
+
+.heroImage {
+  width: 100vw;
+  height: 620px;
+  object-fit: cover;
+  filter: brightness(0.4);
+  transform: scaleX(-1);
+}
+
+.HeroSection {
+  justify-content: center;
+  text-align: left;
+  align-items: center;
+  overflow: hidden;
+  width: 100vw;
+  height: 640px;
+  padding-top: 3.5rem;
+}
+
+.heroContent {
+  position: absolute;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.customTextStyle1 {
+  text-align: center;
+  color: #757575;
+}
+
+.customTextStyle2 {
+  text-align: center;
+  color: #6C5AD8;
+  font-weight: bold;
+  font-size: 35px;
+}
+
+.bg-customColor {
+  background-color: #6C5AD8;
+}
+
+.cardContent {
+  justify-content: center;
+  align-items: center;
+}
+
+.customBtn {
+  width: 9rem;
+  border: 0;
+  padding: 0.5rem;
+  border-top-left-radius: 1.5rem;
+  border-bottom-right-radius: 1.5rem;
+  transition: transform 0.1s ease;
+}
+
+.customBtn:hover {
+  background: #FD003D;
+  transform: scale(1.1);
+}
+
+.image {
+  width: 25rem;
+  height: auto;
+}
+
+@media (min-width: 992px) {
+  .whoWeAreContent {
+    padding-right: 9rem;
+    align-items: left;
+    text-align: left;
+  }
+
+  .image {
+    width: 21rem;
+    height: auto;
+  }
+
+  .imageContainer {
+    align-items: end;
+    text-align: end;
+    justify-content: end;
+    padding-right: 10rem;
+  }
+
+  .heroContent {
+    margin-left: 5rem;
+    padding-right: 10rem;
+  }
+
+  .whoWeAreContainer {
+    margin-left: 25rem;
+    margin-right: 250px;
+  }
+
+  .containerCustomStyle {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .containerContent {
+    padding-left: 1rem;
+    justify-content: left;
+    align-items: left;
+    text-align: left;
+  }
+}
+
+@media(max-width: 658px) {
+  .containerCustomStyle {
+    margin-bottom: 5rem;
+  }
+}

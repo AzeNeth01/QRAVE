@@ -5,12 +5,12 @@ import React from 'react';
 import './styles.css';
 
 //Asset Imports
-import fb from '../../assets/fb.png';
-import ig from '../../assets/ig.png';
-import phone from '../../assets/phone.png';
-import email from '../../assets/email.png';
-import map from '../../assets/map.png';
-import copyright from '../../assets/copyright.png';
+import fb from '../../assets/images/fb.png';
+import ig from '../../assets/images/ig.png';
+import phone from '../../assets/images/phone.png';
+import email from '../../assets/images/email.png';
+import map from '../../assets/images/map.png';
+import copyright from '../../assets/images/copyright.png';
 
 
 /**

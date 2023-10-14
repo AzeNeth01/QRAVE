@@ -1,9 +1,9 @@
 //Style Imports
-import './customstyles.css';
+import './styles.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 //Asset Imports
-import Who from '../../assets/who.jpg'
+import Who from '../../assets/images/who.jpg'
 
 /**
  * @Author Azeneth01 (June Azeneth M. Suco)
