@@ -25,7 +25,8 @@ module.exports = {
       },
       colors:{
         mainColor: '#6C5AD8',
-        accent: '#FD003D'
+        accent: '#FD003D',
+        violet: '#6C5AD8'
       }
 
     },
