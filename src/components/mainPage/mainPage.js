@@ -4,10 +4,6 @@ import React from 'react';
 //Named Imports
 import Header from '../Header/header';
 import Footer from '../Footer/footer';
-<<<<<<< HEAD
-
-=======
->>>>>>> 0344d18806352905ec26d2515572628d0f11ece0
 import Hero from '../../pages/hero/Hero';
 import SolutionToClient from '../../pages/solutionToClient/SolutionToClient';
 import Goals from '../../pages/goals/Goals';
@@ -51,7 +47,6 @@ import '../mainPage/styles.css'
           
         <Footer/>
         </React.Fragment>
-  
   );
 }
 

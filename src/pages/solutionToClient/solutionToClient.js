@@ -1,4 +1,4 @@
-import '../../css/solutionToClient.css';
+import '../../css/SolutionToClient.css';
 
 import  Slider  from '../../components/slider';
 import 'bootstrap/dist/css/bootstrap.min.css';
