@@ -19,34 +19,20 @@ import '../mainPage/styles.css'
  * @returns App
  */
 
-  export default function MainPage() {
+export default function MainPage() {
 
   return (
+
+    <div className='rootContainer'>
       <React.Fragment>
-       
-         <Header/>
-          <div id = 'hero'> <Hero/> </div>
-          <div id = 'whoweare'> <WhoWeAre/></div>
-          
-          {/* Temporary!! */}
-          <br></br>
-          <br></br>
-          <br></br>
-          <br></br>
-          <br></br>
-          <br></br>
-          <br></br>
-          <br></br>
-          <br></br>
-          <br></br>
-          <br></br> 
-          {/* Temporary!! */}
-          <div id = 'solution' style={{marginTop: '100px'}}> <SolutionToClient/> </div>
-          <div> <Goals/> </div> 
-        
-          
-        <Footer/>
-        </React.Fragment>
+        <Header />
+        <div id='hero'> <Hero /> </div>
+        <div id='whoweare'> <WhoWeAre /></div>
+        <div id='solution' style={{ marginTop: '100px' }}> <SolutionToClient /> </div>
+        <div> <Goals /> </div>
+        <Footer />
+      </React.Fragment>
+    </div>
   );
 }
 

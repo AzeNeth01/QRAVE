@@ -4,38 +4,50 @@
 
 .App {
   text-align: center;
+  margin-top: 0;
 }
 
-.solution-header{
+.solution-header {
   font-family: 'Poppins';
   color: #6C5AD8;
   font-weight: bolder;
-  }
+}
 
-  .solution-statement{
-    font-family: 'Poppins';
-    color: #757575;
-    font-weight: normal;
-    }
+.solution-statement {
+  font-family: 'Poppins';
+  color: #757575;
+  font-weight: normal;
+}
 
-    .solution-statement2{
-      font-family: 'Poppins';
-      color: #9A9A9A;
-      font-weight: normal;
-      font-style: italic;
-      }
+.solution-statement2 {
+  font-family: 'Poppins';
+  color: #9A9A9A;
+  font-weight: normal;
+  font-style: italic;
+}
 
-      .solution-statement3{
-        font-family: 'Poppins';
-        color: #939393;
-        font-weight: normal;
-        }
+.solution-statement3 {
+  font-family: 'Poppins';
+  color: #939393;
+  font-weight: normal;
+}
 
-        .client-margin{
-          margin-top: 8rem;
+.client-margin {
+  margin-top: 8rem;
 
-        }
+}
 
+.card-cont {
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+  gap: 2rem;
+}
+
+.solution-card {
+  width: 15rem;
+  height: auto;
+}
 
 
 
@@ -43,13 +55,26 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
 }
 
-/* Hide carousel control buttons */
-.carousel-control-prev, .carousel-control-next {
-  display: none;
+@media(min-width: 640px) {
+  .card-cont {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 0;
+  }
 }
 
+@media(min-width: 947px) {
+  .card-cont {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    place-content: center;
+  }
+}

@@ -12,25 +12,25 @@ import qrave from '../../assets/qrave_logo.png'
  * Header Component
  */
 
-export default function Header(){
- 
+export default function Header() {
+
   return (
     <div>
-    <nav>
-     <div className = 'nav-inner'>
-      <span className = 'logo'> <img src = {qrave} /></span>
-        <div>
-          <ScrollLink to = 'hero' spy = {true} smooth = {true} duration = {500} className = 'links'> Home </ScrollLink>
-          <ScrollLink to = 'hero' spy = {true} smooth = {true} duration = {500} className = 'links'> About us </ScrollLink>
-          <ScrollLink to = 'solution' spy = {true} smooth = {true} duration = {500} className = 'links'> Services </ScrollLink>
-          <ScrollLink to = 'goals' spy = {true} smooth = {true} duration = {500} className = 'links'> Contact </ScrollLink>
-        </div> 
-     </div>
-    </nav>
+      <nav>
+        <div className='nav-inner'>
+          <span className='logo'> <img src={qrave} /></span>
+          <div>
+            <ScrollLink to='hero' spy={true} smooth={true} duration={500} className='links'> Home </ScrollLink>
+            <ScrollLink to='hero' spy={true} smooth={true} duration={500} className='links'> About us </ScrollLink>
+            <ScrollLink to='solution' spy={true} smooth={true} duration={500} className='links'> Services </ScrollLink>
+            <ScrollLink to='goals' spy={true} smooth={true} duration={500} className='links'> Contact </ScrollLink>
+          </div>
+        </div>
+      </nav>
 
 
 
     </div>
-    
+
   )
 }

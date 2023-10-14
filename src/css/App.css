@@ -6,43 +6,48 @@
 @tailwind components;
 @tailwind utilities;
 
-.nav-item:hover{
-  color:#2e044e;
+.nav-item:hover {
+  color: #2e044e;
   cursor: pointer;
 }
 
-.title{
+.title {
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 5);
   text-shadow: inset 2px 10px 8px rgba(5, 0, 0, 0.5);
 }
 
 @media (max-width: 990px) {
-  .section{
+  .section {
     text-align: center;
     display: flex;
     justify-content: center;
     flex-direction: column;
   }
-  .HeroTitleText{
+
+  .HeroTitleText {
     font-size: 2.5rem;
   }
-  .HeroSubtitleText{
+
+  .HeroSubtitleText {
     margin-top: 1rem;
   }
-  .HeroCalltoActions{
+
+  .HeroCalltoActions {
     margin-top: 1rem;
   }
 }
 
-@media (max-width: 816px){
-  .HeroTitleText{
+@media (max-width: 816px) {
+  .HeroTitleText {
     font-size: 1.9rem;
   }
-  .HeroSubtitleText{
+
+  .HeroSubtitleText {
     font-size: 0.9rem;
     margin-top: 0.8rem;
   }
-  .HeroCalltoActions{
+
+  .HeroCalltoActions {
     margin-top: 0.8rem;
     font-size: 0.9rem;
     width: 100%;
@@ -50,84 +55,99 @@
     text-align: center;
     align-items: center;
   }
-  .HeroSection{
+
+  .HeroSection {
     justify-content: center;
     text-align: center;
     align-items: center;
   }
-  .HeroOverlayContents{
+
+  .HeroOverlayContents {
     margin: 0;
   }
-  .HeroConnectBtn{
+
+  .HeroConnectBtn {
     padding: 0.5rem;
     padding-left: 1.5rem;
     padding-right: 1.5rem;
   }
-  .HeroLearnMoreBtn{
+
+  .HeroLearnMoreBtn {
     margin-left: 0.5rem;
   }
 }
 
-@media (max-width: 490px){
-  .HeroCalltoActions{
+@media (max-width: 490px) {
+  .HeroCalltoActions {
     flex-direction: column;
     gap: 1rem;
   }
-  .HeroLearnMoreBtn{
+
+  .HeroLearnMoreBtn {
     margin-left: 0;
   }
-  .logo{
+
+  .logo {
     font-size: 10px;
   }
-  .subtitle{
+
+  .subtitle {
     font-size: 0.5px;
   }
-  .text{
+
+  .text {
     font-size: 25px;
     margin-bottom: 5px;
   }
 }
 
-@media (max-width: 550px){
-  .HeroImage{
+@media (max-width: 550px) {
+  .HeroImage {
     height: 20rem;
     width: auto;
   }
-  .HeroTitleText{
+
+  .HeroTitleText {
     font-size: 30px;
   }
 
-  .HeroSubtitleText{
+  .HeroSubtitleText {
     font-size: 0.1rem;
   }
-  .text{
+
+  .text {
     margin-bottom: 5px;
   }
 
-  
-  .subtitle{
+
+  .subtitle {
     font-size: 15px;
   }
-  .subtext{
+
+  .subtext {
     font-size: 15px;
   }
-  .section{
+
+  .section {
     margin: 10px;
   }
-  .whowearetext{
+
+  .whowearetext {
     margin: 0;
   }
-  .section{
+
+  .section {
     text-align: center;
     display: flex;
     justify-content: center;
     flex-direction: column;
   }
-  .image{
+
+  .image {
     justify-content: center;
     text-align: center;
     align-items: center;
     width: 100%;
-   
+
   }
 }

@@ -10,15 +10,14 @@ import MainPage from './components/mainPage/mainPage';
  * @returns App
  */
 
-  export default function App() {
+export default function App() {
 
   return (
-   
-      <React.Fragment>
-       <MainPage />
-      </React.Fragment>
-      
-  
+
+    <React.Fragment>
+      <MainPage />
+    </React.Fragment>
+    
   );
 }
 

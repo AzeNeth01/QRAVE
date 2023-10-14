@@ -1,28 +1,72 @@
 @import url('https://fonts.googleapis.com/css2?family=Inclusive+Sans&family=Poppins&display=swap');
 
-.qrave-header{
-font-family: 'Inclusive Sans', sans-serif;
-font-family: 'Poppins', sans-serif;
-color: #6C5AD8;
-font-weight: bolder;
+.qrave-header {
+    font-family: 'Inclusive Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    color: #6C5AD8;
+    font-weight: bolder;
+    margin-top: 5rem;
 }
 
-.qrave-sub-header{
+.qrave-sub-header {
     font-family: 'Poppins', sans-serif;
     color: #757575;
     font-size: large;
 }
 
-.qrave-video{
-    width: 75%;
+.qrave-video {
+    width: 70rem;
 }
 
-@media(max-width: 658px){
-    .qrave-video{
+.qrave-demo-video {
+    width: 100vw;
+    place-items: center;
+}
+
+.demo-container {
+    width: 100vx;
+    text-align: center;
+    overflow: hidden;
+    margin-bottom: 5rem;
+}
+
+.goals-image {
+    margin-top: 12rem;
+    width: 70rem;
+    height: auto;
+}
+
+.demoVid{
+    margin-top: 12rem;
+}
+
+@media(max-width: 658px) {
+    .qrave-video {
         width: 100%;
     }
 
-    .qrave-sub-header{
-        font-size: 15px; 
+    .qrave-sub-header {
+        font-size: 15px;
+    }
+
+    .goals-image {
+        width: 100%;
+    }
+
+    .demo-container {
+        margin-top: 5rem;
+        margin-bottom: 2rem;
+    }
+
+    .demoVid{
+        margin-top: 6rem;
+    }
+
+    .goals-image {
+        margin-top: 5rem;
+        width: 100%;
+    }
+    .demo-container{
+        margin: 0.2rem;
     }
 }
