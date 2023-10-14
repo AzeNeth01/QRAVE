@@ -4,16 +4,11 @@ import React from 'react';
 //Named Imports
 import Header from '../Header/header';
 import Footer from '../Footer/footer';
-<<<<<<< HEAD
-import Hero from '../../pages/hero/hero';
-import SolutionToClient from '../../pages/solutionToClient/solutionToClient';
-import Goals from '../../pages/goals/Goals';
-=======
+
 import Hero from '../../pages/hero/Hero';
 import SolutionToClient from '../../pages/SolutionToClient/solutionToClient';
 import Goals from '../../pages/goals/Goals';
 import WhoWeAre from '../../pages/hero/whoWeAre';
->>>>>>> herosectionchanges
 
 //Style Imports
 import '../mainPage/styles.css'
