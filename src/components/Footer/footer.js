@@ -25,42 +25,31 @@ export default function Footer() {
 
     return (
         <React.Fragment>
-            <div className='footer'>
-                <div className='sb_footer section_padding'>
-                    <div className='sb_footer-links'>
-                        <div className='sb_footer-links-div'>
-                            <h3>About Us</h3>
-                            <p>DreamTech elevates</p>
-                            <p>businesses by providing</p>
-                            <p>customized POS soluitions.</p>
-                        </div>
 
-                        <div className='sb_footer-links-div'>
-                            <h3>Contact Us</h3>
-                            <p><img src={map} alt='' className='icon' /> Cebu City</p>
-                            <p><img src={email} alt='' className='icon' /> dreamtech@gmail.com</p>
-                            <p><img src={phone} alt='' className='icon' /> 099999999</p>
-                        </div>
-
-                        <div className='sb_footer-links-div'>
-                            <h3>Follow Us</h3>
-
-                            <div className='socialmedia'>
-                                <p><a href='https://www.facebook.com'><img src={fb} alt='' /></a></p>
-                                <p><a href='https://www.instagram.com'><img src={ig} alt='' /></a></p>
-                            </div>
-                        </div>
-
+            <div class = 'row'>
+                <div class = 'col-xs- col-md-4 text-justify text-center container'>
+                    <h3>About us</h3>
+                    <p>DreamTech elevates</p>
+                    <p>businesses by providing</p>
+                    <p>customized POS solutions</p>
                     </div>
-                </div>
-            </div>
 
-            <div className='sb_footer-below'>
-                <div className='sb_footer-copyright'>
-                    <img src={copyright} alt='' className='icon-credits' />
-                    <p>{year} DREAMTECH | PRIVACY POLICY </p>
+                <div class = 'col-xs-6 col-md-4 text-justify text-center container' >
+                    <h3>Contact Us</h3>
+                    <p>Cebu City</p>
+                    <p>dreamtech@gmail.com</p>
+                    <p>+63 999 9999 999</p>
                 </div>
+
+                <div class = 'col-xs-6 col-md-4 text-top text-sm-center container'>
+                    <h3>Follow Us</h3>
+                    <a href = 'www.facebook.com'><img src = {fb}/></a>
+                    <a href = 'www.instagram.com'><img src = {ig}/></a>
+                    
+                </div>
+                
             </div>
+            
         </React.Fragment>
     );
 }
