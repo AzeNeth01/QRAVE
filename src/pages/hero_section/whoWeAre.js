@@ -14,7 +14,7 @@ import Who from '../../assets/who.jpg'
 export default function WhoWeAre() {
   return (
     <div>
-      <div className='container containerCustomStyle'>
+      <div className='containerCustomStyle'>
         <img className='image img-fluid' src={Who} alt="..." />
         <div class="mt-4 containerContent">
           <h5 class="customTextStyle2 containerContent">WHO WE ARE</h5>
