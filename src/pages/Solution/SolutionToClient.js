@@ -11,7 +11,7 @@ import rec_4 from '../../assets/images/rec4.jpg';
 
 function solutionToClient() {
   return (
-
+    
     <div class="container App">
       <h1 class="solution-header my-4">SOLUTIONS</h1>
       <p class="solution-statement mt-3">Web-based application for Point-of-Sales and Ordering Systems</p>
@@ -37,7 +37,7 @@ function solutionToClient() {
       <div>
         <h2 class="solution-header client-margin">WHAT OUR CLIENT SAYS</h2>
       </div>
-      <div>
+      <div className='slider-bg'>
         <Slider />
       </div>
     </div>

@@ -18,7 +18,7 @@ export default function Header() {
     <div>
       <nav>
         <div className='nav-inner'>
-          <span className='logo'> <img src={qrave} /></span>
+          <span className='logo'> <img src={qrave} alt='qrave logo' /></span>
           <div>
             <ScrollLink to='home' spy={true} smooth={true} duration={500} className='links'> Home </ScrollLink>
             <ScrollLink to='who' spy={true} smooth={true} duration={500} className='links'> About us </ScrollLink>
