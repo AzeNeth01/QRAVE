@@ -1,8 +1,8 @@
 import React from 'react';
-import '../../css/custom.css'
+import '../Goals/styles.css'
 
 //Asset Imports
-import goalsimage from '../../assets/goals-section.png';
+import goalsimage from '../../assets/images/goals-section.png';
 import qravedemo from '../../assets/videos/Qrave_quick_demo.mp4';
 
 export default function Qravegoals() {

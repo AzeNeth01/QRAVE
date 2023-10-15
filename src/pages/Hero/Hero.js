@@ -1,9 +1,9 @@
 //Style Imports
-import './customstyles.css';
+import './styles.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 //Asset Imports
-import HeroHalf from '../../assets/half.jpg'
+import HeroHalf from '../../assets/images/half.jpg'
 
 /**
  * @Author Azeneth01 (June Azeneth M. Suco)

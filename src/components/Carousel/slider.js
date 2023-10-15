@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import Carousel from 'react-bootstrap/Carousel';
 
 //Asset Imports
-import business from '../business.png';
+import business from '../../assets/images/business.png';
 
 
 function Slider() {

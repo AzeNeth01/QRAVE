@@ -5,7 +5,7 @@ import { Link as ScrollLink } from 'react-scroll';
 import './styles.css'
 
 //Asset Imports
-import qrave from '../../assets/qrave_logo.png'
+import qrave from '../../assets/images/qrave_logo.png'
 
 /**
  * @author ampats04 (Jeremy Andy F. Ampatin)
@@ -20,10 +20,10 @@ export default function Header() {
         <div className='nav-inner'>
           <span className='logo'> <img src={qrave} /></span>
           <div>
-            <ScrollLink to='hero' spy={true} smooth={true} duration={500} className='links'> Home </ScrollLink>
-            <ScrollLink to='hero' spy={true} smooth={true} duration={500} className='links'> About us </ScrollLink>
+            <ScrollLink to='home' spy={true} smooth={true} duration={500} className='links'> Home </ScrollLink>
+            <ScrollLink to='who' spy={true} smooth={true} duration={500} className='links'> About us </ScrollLink>
             <ScrollLink to='solution' spy={true} smooth={true} duration={500} className='links'> Services </ScrollLink>
-            <ScrollLink to='goals' spy={true} smooth={true} duration={500} className='links'> Contact </ScrollLink>
+            <ScrollLink to='contact' spy={true} smooth={true} duration={500} className='links'> Contact </ScrollLink>
           </div>
         </div>
       </nav>

@@ -2,15 +2,15 @@
 import React from 'react';
 
 //Named Imports
-import Header from '../Header/header';
-import Footer from '../Footer/footer';
-import Hero from '../../pages/hero_section/Hero';
-import SolutionToClient from '../../pages/solutionToClient_section/SolutionToClient';
-import Goals from '../../pages/goals_section/Goals';
-import WhoWeAre from '../../pages/hero_section/whoWeAre';
+import Header from '../Header/Header';
+import Footer from '../Footer/Footer';
+import Hero from '../../pages/Hero/Hero';
+import SolutionToClient from '../../pages/Solution/SolutionToClient';
+import Goals from '../../pages/Goals/Goals';
+import WhoWeAre from '../../pages/Who/whoWeAre';
 
 //Style Imports
-import '../mainPage/styles.css'
+import './styles.css'
 
 
 /**
@@ -25,12 +25,12 @@ export default function MainPage() {
 
     <div className='rootContainer'>
       <React.Fragment>
-        <Header />
-        <div id='hero'> <Hero /> </div>
-        <div id='whoweare'> <WhoWeAre /></div>
-        <div id='solution' style={{ marginTop: '100px' }}> <SolutionToClient /> </div>
+        <div><Header /> </div>
+        <div id='home'> <Hero /> </div>
+        <div id='who'> <WhoWeAre /></div>
+        <div id='solution'> <SolutionToClient /> </div>
         <div> <Goals /> </div>
-        <Footer />
+        <div id = 'contact'><Footer /></div>
       </React.Fragment>
     </div>
   );
