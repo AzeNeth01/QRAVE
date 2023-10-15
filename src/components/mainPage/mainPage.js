@@ -10,7 +10,7 @@ import Goals from '../../pages/Goals/Goals';
 import WhoWeAre from '../../pages/Who/whoWeAre';
 
 //Style Imports
-import '../mainPage/styles.css'
+import './styles.css'
 
 
 /**
