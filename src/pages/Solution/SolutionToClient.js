@@ -1,4 +1,4 @@
-import '../Solution/styles.css';
+import './solution_styles.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 import Slider from '../../components/Carousel/slider';
@@ -11,7 +11,7 @@ import rec_4 from '../../assets/images/rec4.jpg';
 
 function solutionToClient() {
   return (
-    
+
     <div class="container App">
       <h1 class="solution-header my-4">SOLUTIONS</h1>
       <p class="solution-statement mt-3">Web-based application for Point-of-Sales and Ordering Systems</p>
@@ -20,17 +20,17 @@ function solutionToClient() {
       </p>
 
       <div class="card-cont">
-        <div class="solution-card">
-          <img src={rec_1} alt="" class="img-fluid" />
+        <div class="">
+          <img src={rec_1} alt="" class="card-image" />
         </div>
-        <div class="solution-card">
-          <img src={rec_2} alt="" class="img-fluid" />
+        <div class="">
+          <img src={rec_2} alt="" class="card-image" />
         </div>
-        <div class="solution-card">
-          <img src={rec_3} alt="" class="img-fluid" />
+        <div class="">
+          <img src={rec_3} alt="" class="card-image" />
         </div>
-        <div class="solution-card">
-          <img src={rec_4} alt="" class="img-fluid" />
+        <div class="">
+          <img src={rec_4} alt="" class="card-image" />
         </div>
       </div>
 

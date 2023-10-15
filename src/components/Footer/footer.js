@@ -2,15 +2,14 @@
 import React from 'react';
 
 //Style Imports
-import './styles.css';
+import './footer_styles.css';
 
 //Asset Imports
 import fb from '../../assets/images/fb.png';
 import ig from '../../assets/images/ig.png';
-import phone from '../../assets/images/phone.png';
+import location from '../../assets/images/map.png';
 import email from '../../assets/images/email.png';
-import map from '../../assets/images/map.png';
-import copyright from '../../assets/images/copyright.png';
+import phone from '../../assets/images/phone.png';
 
 
 /**
@@ -24,32 +23,34 @@ export default function Footer() {
     const year = new Date().getFullYear();
 
     return (
-        <React.Fragment>
+        <div class='row-12 footer-container'>
+            <div className='col'>
+                <h3>About us</h3>
+                <p>DreamTech elevates businesses by providing customized POS Solutions</p>
+            </div>
 
-            <div class = 'row'>
-                <div class = 'col-xs- col-md-4 text-justify text-center container'>
-                    <h3>About us</h3>
-                    <p>DreamTech elevates</p>
-                    <p>businesses by providing</p>
-                    <p>customized POS solutions</p>
-                    </div>
-
-                <div class = 'col-xs-6 col-md-4 text-justify text-center container' >
-                    <h3>Contact Us</h3>
+            <div className='col'>
+                <h3>Contact Us</h3>
+                <div className='inner-cont center'>
+                    <img src={location} alt="" className='icon'/>
                     <p>Cebu City</p>
+                </div>
+                <div className='inner-cont center'>
+                    <img src={email} alt="" className='icon'/>
                     <p>dreamtech@gmail.com</p>
+                </div>
+                <div className='inner-cont center'>
+                    <img src={phone} alt="" className='icon'/>
                     <p>+63 999 9999 999</p>
                 </div>
 
-                <div class = 'col-xs-6 col-md-4 text-top text-sm-center container'>
-                    <h3>Follow Us</h3>
-                    <a href = 'www.facebook.com'><img src = {fb}/></a>
-                    <a href = 'www.instagram.com'><img src = {ig}/></a>
-                    
-                </div>
-                
             </div>
-            
-        </React.Fragment>
+
+            <div className='col'>
+                <h3>Follow Us</h3>
+                <a href='www.facebook.com'><img src={fb} /></a>
+                <a href='www.instagram.com'><img src={ig} /></a>
+            </div>
+        </div>
     );
 }

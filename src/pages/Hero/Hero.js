@@ -1,5 +1,5 @@
 //Style Imports
-import './styles.css';
+import './hero_styles.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 //Asset Imports
@@ -14,7 +14,7 @@ import HeroHalf from '../../assets/images/half.jpg'
 export default function Hero() {
   return (
     <div className="HeroSection w-full flex flex-col  relative">
-      <div className="card text-bg-dark cardContent">
+      <div className="card text-white cardContent">
         <img src={HeroHalf} class="heroImage" alt="..." />
         <div className="ml-[1.2rem] mr-[1.2rem] flex flex-col heroContent">
           <p className="titleHero h1">The One POS for Every Juan: <br /> Simplifying Business for All</p>
