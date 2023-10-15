@@ -2,8 +2,8 @@
 import React from 'react';
 
 //Named Imports
-import Header from '../Header/Header';
-import Footer from '../Footer/Footer';
+import Header from '../Header/header';
+import Footer from '../Footer/footer';
 import Hero from '../../pages/Hero/Hero';
 import SolutionToClient from '../../pages/Solution/SolutionToClient';
 import Goals from '../../pages/Goals/Goals';

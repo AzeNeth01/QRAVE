@@ -2,7 +2,7 @@
 import React from 'react';
 
 //Named Imports
-import MainPage from './components/Mainpage/MainPage';
+import MainPage from './components/mainPage/mainPage';
 
 /**
  * @author ampats04 (Jeremy Andy F. Ampatin)
