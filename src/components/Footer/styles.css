@@ -1,4 +1,10 @@
 .container{
     background-color: #c5bdf3;
+    padding-top:15px;
     width: 100vw;
+}
+
+.footer_img{
+    width: 20px;
+    height: 20px;
 }

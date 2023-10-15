@@ -25,23 +25,23 @@ export default function Footer() {
 
     return (
         <React.Fragment>
-
-            <div class = 'row'>
-                <div class = 'col-xs- col-md-4 text-justify text-center container'>
+            <div class = 'row container'>
+                <div class = 'col-xs-6p col-md-4 text-center'>
                     <h3>About us</h3>
                     <p>DreamTech elevates</p>
                     <p>businesses by providing</p>
                     <p>customized POS solutions</p>
                     </div>
 
-                <div class = 'col-xs-6 col-md-4 text-justify text-center container' >
+                <div class = 'col-xs-6 col-md-4 text-center' >
+                  
                     <h3>Contact Us</h3>
-                    <p>Cebu City</p>
-                    <p>dreamtech@gmail.com</p>
-                    <p>+63 999 9999 999</p>
+                    <p><img src = {map} class = 'footer_img'/>Cebu City</p>
+                    <p> <img src = {email} class = 'footer_img' />dreamtech@gmail.com</p>
+                    <p><img src = {phone} class = 'footer_img'/>+63 999 9999 999</p>
                 </div>
 
-                <div class = 'col-xs-6 col-md-4 text-top text-sm-center container'>
+                <div class = 'col-xs-6 col-md-4 text-center '>
                     <h3>Follow Us</h3>
                     <a href = 'www.facebook.com'><img src = {fb}/></a>
                     <a href = 'www.instagram.com'><img src = {ig}/></a>
@@ -49,6 +49,7 @@ export default function Footer() {
                 </div>
                 
             </div>
+
             
         </React.Fragment>
     );
