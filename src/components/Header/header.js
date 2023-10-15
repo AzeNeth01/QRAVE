@@ -18,18 +18,6 @@ export default function Header() {
 
   return (
     <div>
-      {/* <nav>
-        <div className='nav-inner'>
-          <img src={qrave} alt='qrave-logo' className='qrave-logo' />
-          <div>
-            <ScrollLink to='home' spy={true} smooth={true} duration={500} className='links'> Home </ScrollLink>
-            <ScrollLink to='who' spy={true} smooth={true} duration={500} className='links'> About us </ScrollLink>
-            <ScrollLink to='solution' spy={true} smooth={true} duration={500} className='links'> Services </ScrollLink>
-            <ScrollLink to='contact' spy={true} smooth={true} duration={500} className='links'> Contact </ScrollLink>
-          </div>
-        </div>
-      </nav> */}
-
       <nav class="navbar fixed-top navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
           <a href="#"> <img src={qrave} alt="" className='qrave-logo' /> </a>
@@ -37,24 +25,23 @@ export default function Header() {
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse text-center navigation" id="navbarNav">
-            <ul class="navbar-nav w-full">
+            <ul class="navbar-nav ">
               <li class="nav-item">
-              <ScrollLink to='home' spy={true} smooth={true} duration={500} className='links'> Home </ScrollLink>
+                <ScrollLink to='home' spy={true} smooth={true} duration={500} className='links'> Home </ScrollLink>
               </li>
               <li class="nav-item">
-              <ScrollLink to='who' spy={true} smooth={true} duration={500} className='links'> About us </ScrollLink>
+                <ScrollLink to='who' spy={true} smooth={true} duration={500} className='links'> About us </ScrollLink>
               </li>
               <li class="nav-item">
-              <ScrollLink to='solution' spy={true} smooth={true} duration={500} className='links'> Services </ScrollLink>
+                <ScrollLink to='solution' spy={true} smooth={true} duration={500} className='links'> Services </ScrollLink>
               </li>
               <li class="nav-item">
-              <ScrollLink to='contact' spy={true} smooth={true} duration={500} className='links'> Contact </ScrollLink>
+                <ScrollLink to='contact' spy={true} smooth={true} duration={500} className='links'> Contact </ScrollLink>
               </li>
             </ul>
           </div>
         </div>
       </nav>
     </div>
-
   )
 }
