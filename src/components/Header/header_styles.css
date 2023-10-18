@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  
 }
 
 .qrave-logo {
@@ -24,6 +25,10 @@
 .navigation{
   display: flex;
   justify-content: center;
+}
+
+.container{
+  box-shadow: #6C5AD8;
 }
 
 @media screen and (min-width: 990px){

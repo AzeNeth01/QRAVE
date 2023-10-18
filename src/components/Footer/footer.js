@@ -27,13 +27,14 @@ export default function Footer() {
         <div>
             <div class='row-12 footer-container'>
                 <div className='col text-center'>
+                    <br/>
                     <h5>About us</h5>
-                    <p>DreamTech elevates businesses  <br/>by providing customized POS Solutions</p>
+                    <p>DreamTech elevates businesses  <br/>by providing customized <br/>POS Solutions</p>
                 </div>
 
                 <div className='col text-center'>
+                <br/>
                     <h5>Contact Us</h5>
-                 
                      <p><img src={location} alt="" className='icon' />Cebu City</p>
                      <p><img src={email} alt="" className='icon ' />dreamtech@gmail.com</p>    
                      <p><img src={phone} alt="" className='icon' />+63 999 9999 999</p>
@@ -41,13 +42,14 @@ export default function Footer() {
                 </div>
 
                 <div className='col text-center'>
+                <br/>
                     <h5>Follow Us</h5>
                     <a href='www.facebook.com'><img src={fb} /></a>
                     <a href='www.instagram.com'><img src={ig} /></a>
                 </div>
                 
             </div>
-          <div className='copy-right'> <p className='copy-right '>© 2023 DREAMTECH. | PRIVACY POLICY</p></div>
+          <div> <p className='copy-right text-center '>© 2023 DREAMTECH. | PRIVACY POLICY</p></div>
         </div>
         
         

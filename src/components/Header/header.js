@@ -18,7 +18,7 @@ export default function Header() {
 
   return (
     <div>
-      <nav class="navbar fixed-top navbar-expand-lg bg-body-tertiary">
+      <nav class="navbar fixed-top navbar-expand-lg" style={{ backgroundColor: '#D6CFF5' }}>
         <div class="container-fluid">
           <a href="#"> <img src={qrave} alt="" className='qrave-logo' /> </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
